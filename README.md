@@ -10,6 +10,7 @@ Identify behavioral differences between casual riders and members to support mar
 - R
 - tidyverse
 - lubridate
+- Google Slides
 
 ## Key Insights
 - Members ride more frequently, בעיקר during weekdays
