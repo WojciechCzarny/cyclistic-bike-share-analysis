@@ -1,27 +1,27 @@
 # Cyclistic Bike-Share Analysis
 
-## 📊 Project Overview
+## Project Overview
 This project analyzes Cyclistic bike-share data to understand how casual riders and annual members use the service differently.
 
-## 🎯 Business Task
+## Business Task
 Identify behavioral differences between casual riders and members to support marketing strategies aimed at increasing memberships.
 
-## 🛠 Tools Used
+## Tools Used
 - R
 - tidyverse
 - lubridate
 
-## 🔍 Key Insights
+## Key Insights
 - Members ride more frequently, בעיקר during weekdays
 - Casual riders take longer rides and prefer weekends
 - Usage patterns suggest commuting vs recreational behavior
 
-## 💡 Recommendations
+## Recommendations
 - Target casual riders with weekend promotions
 - Highlight cost benefits of membership for frequent riders
 - Use targeted digital marketing campaigns
 
-## 📁 Files Included
+## Files Included
 - R script (data cleaning and analysis)
 - R Markdown file
 - Final report
