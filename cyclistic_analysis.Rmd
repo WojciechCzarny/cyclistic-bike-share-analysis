@@ -1,0 +1,56 @@
+---
+title: "cyclistic_analysis"
+output: html_document
+---
+
+# ==============================
+# Cyclistic Bike Share Analysis
+# ==============================
+
+# Load libraries
+library(tidyverse)
+library(lubridate)
+
+# ------------------------------
+# Import Data
+# ------------------------------
+files <- list.files("C:/Users/Wojtas/Desktop/divvy_data", full.names = TRUE)
+data_list <- lapply(files, read_csv)
+all_data <- bind_rows(data_list)
+
+# ------------------------------
+# Data Cleaning
+# ------------------------------
+all_data <- all_data %>%
+  mutate(
+    started_at = ymd_hms(started_at),
+    ended_at = ymd_hms(ended_at),
+    ride_length = ended_at - started_at,
+    day_of_week = wday(started_at, label = TRUE)
+  ) %>%
+  filter(ride_length > 0)
+
+# Convert ride_length to numeric
+all_data <- all_data %>%
+  mutate(ride_length = as.numeric(ride_length))
+
+# ------------------------------
+# Analysis
+# ------------------------------
+
+# Average ride length
+all_data %>%
+  group_by(member_casual) %>%
+  summarise(avg_ride = mean(ride_length))
+
+# Rides by day
+all_data %>%
+  group_by(member_casual, day_of_week) %>%
+  summarise(total_rides = n())
+
+# ------------------------------
+# Visualization
+# ------------------------------
+ggplot(all_data, aes(x = day_of_week, fill = member_casual)) +
+  geom_bar(position = "dodge") +
+  labs(title = "Rides by Day and User Type")
