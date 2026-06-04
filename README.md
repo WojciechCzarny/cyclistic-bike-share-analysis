@@ -21,7 +21,7 @@ Identify behavioral differences between casual riders and members to support mar
 - lubridate
 
 ## Key Insights
-- Members ride more frequently, בעיקר during weekdays
+- Members ride more frequently during weekdays
 - Casual riders take longer rides and prefer weekends
 - Usage patterns suggest commuting vs recreational behavior
 
