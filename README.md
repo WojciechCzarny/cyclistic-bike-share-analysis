@@ -42,3 +42,5 @@ Identify behavioral differences between casual riders and members to support mar
 /scripts
 /visuals
 /report
+
+This project was completed as part of my early data analytics learning journey and focuses on applying fundamental data cleaning, analysis, and visualization techniques in R.
