@@ -1,4 +1,13 @@
-# Cyclistic Bike-Share Analysis
+## Dataset
+Cyclistic historical trip data provided by Divvy.
+
+## Analysis Process
+1. Data Collection
+2. Data Cleaning
+3. Feature Engineering
+4. Exploratory Analysis
+5. Visualization
+6. Business Recommendations
 
 ## Project Overview
 This project analyzes Cyclistic bike-share data to understand how casual riders and annual members use the service differently.
@@ -26,3 +35,10 @@ Identify behavioral differences between casual riders and members to support mar
 - R Markdown file
 - Final report
 - Presentation slides
+
+## Repository Structure
+/project
+/data
+/scripts
+/visuals
+/report
